@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Ragdoll Archers</title>
 <link rel="stylesheet" href="style.css">
-<body>
+<body><div id="flashcard-repo-lock" style="position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;background:#080808;color:#eee;font:16px 'Courier New',monospace"><form id="flashcard-repo-lock-form" style="width:min(390px,90%);padding:30px;background:#101010;border:2px solid #555;text-align:center"><h1>PASSWORD REQUIRED</h1><p>Enter the password to access this game.</p><input id="flashcard-repo-lock-input" type="password" placeholder="Enter password" required style="box-sizing:border-box;width:100%;padding:13px;background:#080808;color:#eee;border:1px solid #555;font:inherit"><p id="flashcard-repo-lock-error" aria-live="polite"></p><button style="width:100%;padding:12px;font:bold 14px 'Courier New',monospace">UNLOCK GAME</button></form></div><script>document.getElementById('flashcard-repo-lock-form').addEventListener('submit',function(e){e.preventDefault();var i=document.getElementById('flashcard-repo-lock-input');if(i.value==='pness'){document.getElementById('flashcard-repo-lock').remove()}else{document.getElementById('flashcard-repo-lock-error').textContent='Incorrect password. Try again.';i.select()}});</script>
 <div id="unity-container" class="unity-desktop">
 <canvas id="unity-canvas"></canvas>
 </div>
